@@ -1818,6 +1818,10 @@ var Chess = function(fen) {
       return get(square)
     },
 
+    attacked: function(color, squareAlg) {
+      return attacked(color, SQUARES[squareAlg])
+    },
+
     remove: function(square) {
       return remove(square)
     },
