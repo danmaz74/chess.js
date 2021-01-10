@@ -1378,6 +1378,10 @@ export const Chess = function (fen) {
       return moves
     },
 
+    attacked: function(color, squareAlg) {
+      return attacked(color, SQUARES[squareAlg])
+    },
+
     in_check: function () {
       return in_check()
     },
